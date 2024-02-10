@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import jsonData from './data.json';
-import './table.css'; // For styling
+
 
 const Row = ({ data, level = 0 }) => {
     const [expanded, setExpanded] = useState(false);
@@ -38,6 +38,10 @@ const Row = ({ data, level = 0 }) => {
 
 const Table = () => {
   return (
+    <>
+    <h1 className="text-3xl underline font-light ">
+      Hello world!
+    </h1>
     <table>
       <thead>
         <tr>
@@ -52,6 +56,9 @@ const Table = () => {
         ))}
       </tbody>
     </table>
+    </>
+    
+    
   );
 };
 
